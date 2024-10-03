@@ -1,0 +1,98 @@
+body { 
+    background-color: rgb(255, 255, 255);
+}
+
+#Titulo {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    margin: 0; /* Remover margens negativas */
+    padding: 15px; 
+    text-align: left; 
+    padding-left: 20px; /* Ajustar padding */
+}
+
+#Titulo a {
+    color: #ebebeb;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.departamento {
+    border: 2px solid black;
+    border-radius: 7px;
+    text-align: center;
+    background-color: black;
+}
+
+#links {
+    background-color: rgb(37, 37, 37);
+    margin-left:0px ; /* Remover margens negativas */
+    margin-right:-35px ;
+    padding: 15px 0; 
+    text-align: left; 
+    padding-left: 20px; /* Ajustar padding */
+    word-spacing: 30px; 
+}
+
+#links a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px; /* Espaço entre os links */
+}
+
+#links a:hover {
+    color: #69485b; 
+}
+
+.background1img {
+    height: 400px;
+    background-color: grey;
+    background-image: url("../img/imagemteste2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left:0px ; /* Remover margens negativas */
+    margin-right:-35px ;
+}
+
+.search-box {
+    display: inline-flex; /* Mantém a barra de pesquisa ao lado do título */
+    align-items: center; /* Centraliza verticalmente */
+    margin-left: 20px; /* Espaço entre o título e a barra de pesquisa */
+}
+
+.search-box input {
+    width: 1000px; /* Ajuste o tamanho conforme necessário */
+    padding: 10px; /* Espaço interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.search-icon {
+    font-size:17px; /* Tamanho do ícone */
+    color: rgb(0, 0, 0); /* Cor do ícone */
+    margin-left: -35px; /* Espaço entre o input e o ícone */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilos do rodapé */
+#rodape {
+    background-color: rgb(37, 37, 37);
+    color: rgb(245, 245, 245);
+    padding: 20px 0; /* Remova o 200, pois isso não faz sentido */
+    margin: 0; /* Remova margens negativas */
+}
+
+#rodape .container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo do rodapé */
+    padding: 20px;
+    text-align: center; /* Adicione este alinhamento */
+}
+
+#rodape .links {
+    margin: 10px 0;
+}
+
