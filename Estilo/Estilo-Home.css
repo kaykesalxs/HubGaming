@@ -1,36 +1,34 @@
 body { 
     background-color: #F4F4F4; /* Fundo suave para toda a página */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
 #Titulo {
-    background-color: #333333; /* Azul Escuro */
-    width: 100%;
-    margin: 0; 
-    padding: 15px; 
-    text-align: left; 
-    padding-left: 20px;   
+    background-color: #1a1a1a; /* Azul Escuro */
+    width: 100%; 
+    text-align: center; 
+    padding: 5px; /* Ajuste para melhor espaçamento */
 }
 
 #Titulo a {
-    color: #8E44AD ; /* Cor do título */
+    color: #e7e7e7; /* Cor do título */
     font-size: 30px;
     text-decoration: none;
 }
 
 .departamento {
-    border: 2px solid #00BFFF; /* Bordas mais suaves */
+    border: 10px solid #000000; /* Bordas mais suaves */
     border-radius: 7px;
     text-align: center;
-    background-color: #2C3E50; /* Azul Escuro */
+    background-color: #000000; /* Azul Escuro */
 }
 
 #links {
-    background-color: #333333; /* Azul Acinzentado */
-    margin-left: 0; 
-    margin-right: -35px;
-    padding: 15px 0; 
-    text-align: left; 
-    padding-left: 20px; 
+    background-color: #1a1a1a; /* Azul Acinzentado */
+    width: 100%;
+    padding: 20px; /* Ajustar o padding superior */
+    text-align: center; 
     word-spacing: 30px; 
 }
 
@@ -38,22 +36,22 @@ body {
     color: #ffffff; /* Cor dos links no cabeçalho */
     font-size: 20px;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px; /* Espaçamento lateral entre os links */
+    
 }
 
 #links a:hover {
-    color: #8E44AD ; /* Cor ao passar o mouse */
+    color: #8E44AD; /* Cor ao passar o mouse */
 }
 
 .background1img {
-    height: 400px;
+    height: 230px;
     background-color: grey;
-    background-image: url("../img/imagemteste2.jpg");
+    background-image: url("../img/tera.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 0; 
-    margin-right: -35px;
+    width:110%;
 }
 
 .search-box {
@@ -63,8 +61,8 @@ body {
 }
 
 .search-box input {
-    width: 800px; /* Tamanho reduzido para melhor proporção */
-    padding: 10px; 
+    width: 1000px; /* Tamanho para melhor proporção */
+    padding: 15px; 
     font-size: 16px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -77,24 +75,49 @@ body {
     cursor: pointer; 
 }
 
-/* Estilos do rodapé */
-#rodape {
-    background-color: #333333; /* Azul Escuro */
-    color: #ffffff; 
-    padding: 20px 0; 
-    margin: 0; 
-}
-
-#rodape .container {
-    max-width: 1200px;
-    margin: 0 auto; 
+.Spoiler-Black {
+    background-color: red;
+    color: #ffffff;
+    border-radius: 7px;
     padding: 20px;
-    text-align: center; 
+    max-width: 1500px;
+    margin-left: 170px;
 }
 
-#rodape .links {
-    margin: 10px 0;
+
+/* Estilos da área de login */
+#login-area {
+    display: inline-block; /* Mantém a área de login ao lado da barra de pesquisa */
+    margin-left: 20px; /* Espaçamento à esquerda */
 }
+
+.login-link {
+    color: #e7e7e7; /* Cor do link de login */
+    font-size: 14px; /* Ajuste o tamanho da fonte aqui */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+.texto-login {
+    font-size: 15px;
+    max-width:110px;
+}
+
+.login-link i {
+    margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+.login-link:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o fundo do site */
+body { 
+    background-color: #F4F4F4; /* Fundo suave para toda a página */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
 
 /* Novo estilo para container de produtos */
 .container {
@@ -102,14 +125,19 @@ body {
     flex-wrap: wrap;          
     justify-content: center;   
     gap: 20px;                
+    padding: 20px; /* Adicionando padding para centralizar melhor */
 }
 
 .produto {
-    text-align: center;       
-    border: 1px solid #ddd;  
-    border-radius: 8px;      
-    padding: 20px;           /* Aumentado para dar mais espaço */
-    width: 220px;            /* Largura aumentada para um visual mais equilibrado */
+    display: flex;                 /* Flexbox para o alinhamento */
+    flex-direction: column;       /* Coluna para o texto abaixo da imagem */
+    align-items: center;          /* Alinha itens no centro */
+    text-align: center;           
+    border: 1px solid #ddd;      
+    border-radius: 8px;          
+    padding: 20px;               
+    width: 250px;                
+    height: 400px;               /* Altura padronizada */
     background-color: #FFFFFF; /* Fundo branco para os produtos */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para profundidade */
     transition: transform 0.2s; /* Transição suave */
@@ -121,25 +149,48 @@ body {
 }
 
 .Apple,
-.Notebook-acer
-.Ryzen7
-.MouseHyperX
-.RTX4060 {
-    width: 100%;              
+.Notebook-acer,
+.Ryzen7,
+.RTX4060,
+.MouseHyperX {
+    width: 100%;               /* Imagens ocupam toda a largura do contêiner */
     height: auto;             
     border-radius: 5px;       
     margin-top: 10px;        
 }
+/* Estilos adicionais para avaliação de produtos */
+/* Avaliação das estrelas */
+.avaliacao {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    display: flex;
+}
+
+.estrela {
+    color: rgb(192, 137, 18); /* Cor das estrelas */
+    margin-left: 2px; /* Espaçamento entre as estrelas */
+}
+
+/* Ajustes nos produtos */
+.produto {
+    position: relative; /* Necessário para a posição absoluta das estrelas */
+    /* ... outros estilos do contêiner do produto ... */
+}
+
+
 
 .clickable-title {
     color: #000000; /* Cor do link clicável */
     text-decoration: none; /* Remove o sublinhado */
     font-weight: bold; /* Negrito para destaque */
+    margin: 10px 0; /* Margem para espaçamento uniforme */
+    flex-grow: 1; /* Faz o título ocupar espaço disponível */
 }
 
 .clickable-title:hover {
-    color: #8E44AD ; /* Cor ao passar o mouse */
-    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+    color: #8E44AD; /* Cor ao passar o mouse */
+   
 }
 
 /* Estilos do preço */
@@ -147,4 +198,61 @@ body {
     color: #2ECC71; /* Verde mais suave */
     font-size: 20px; /* Tamanho da fonte */
     font-weight: bold; /* Adiciona um destaque */
+    margin-top: auto; /* Empurra para a parte inferior do contêiner */
+    margin-right:140px;
+}
+.Definição-valor {
+    font-size:13px;
+    text-align: left;
+    line-height: 5px;
+    font-weight:normal;
+}
+#rodape {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+#rodape .container {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+#rodape h2 {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+#rodape .links {
+    margin: 15px 0; /* Margem acima e abaixo dos links */
+}
+
+#rodape .links a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaçamento lateral entre os links */
+}
+
+#rodape .links a:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+.social-media {
+    margin: 15px 0; /* Margem acima e abaixo dos ícones de redes sociais */
+}
+
+.social-media a {
+    color: #ffffff; /* Cor dos ícones */
+    margin: 0 10px; /* Espaçamento lateral entre os ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+}
+
+.social-media a:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+.copyright {
+    margin-top: 15px; /* Espaçamento acima do texto de copyright */
+    font-size: 14px; /* Tamanho do texto */
 }
