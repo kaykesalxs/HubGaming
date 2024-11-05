@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Meu projeto Hub!">
+    <meta name="keywords" content="Projeto, Desenvolvimento, Programação">
+    <meta name="author" content="Kayke Sales">
+    <title>Ryzen7</title>
+    <link rel="stylesheet" href="Estilo/Estilo-Produtos.css"> <!--mudar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    Aqui ficará o Ryzen7 e suas especificações.
-    
+    <!-- Cabeçalho -->
+    <header>
+        <div id="Titulo">
+            <img src="img/logo_transparente.png" alt="Logo Hub Gaming" style="height: 70px; margin-right: 10px; vertical-align: middle; position: relative; top: -5px;">
+            <a href="http://127.0.0.1:3000/hubgaming.html" class="clickable-title">Hub Gaming</a>
+            <div class="search-box">
+                <input type="text" name="search" placeholder="Pesquise o seu produto">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Produto -->
+    <section class="produto">
+        <div class="avaliacao">
+            <span class="estrela"><i class="fas fa-star"></i></span>
+            <span class="estrela"><i class="fas fa-star"></i></span>
+            <span class="estrela"><i class="fas fa-star"></i></span>
+            <span class="estrela"><i class="fas fa-star-half-alt"></i></span>
+            <span class="estrela"><i class="far fa-star"></i></span>
+        </div>
+
+        <a href="http://127.0.0.1:3000/Ryzen7.html">
+            <img src="img/ryzen 5700x.webp" alt="Ryzen7" class="Ryzen7">
+        </a>
+
+        <a href="http://127.0.0.1:3000/Ryzen7.html" class="clickable-title">
+            <p class="texto-conteiner">Processador AMD Ryzen 7 5700X, Sem Vídeo</p>
+            <p class="preco">R$ 1.299,99</p>
+        </a>
+
+        <!-- Botão de Compra -->
+        <a href="#" class="comprar">
+            <button class="btn-comprar">COMPRAR</button>
+        </a>
+
+        <!-- Especificações -->
+        <div class="especificacoes">
+            <h2>Especificações:</h2>
+            <ul>
+                <li>- Socket: AM4</li>
+                <li>- Frequência Base: 3.00 GHz</li>
+                <li>- Frequência Turbo: Até 4.1 GHz</li>
+                <li>- Número de Núcleos: 8</li>
+                <li>- Número de Threads: 16</li>
+                <li>- Cache L2 total: 4 MB</li>
+                <li>- Cache L3 total: 96 MB</li>
+                <li>- Litografia: TSMC 7nmFinFET</li>
+                <li>- TDP: 105 W</li>
+                <li>- Solução térmica: Não incluído</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <div class="container">
+            <div class="links">
+                <a href="#home">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#contato">Contato</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
