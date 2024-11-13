@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
+    <!-- Cabeçalho com logo, barra de pesquisa e login -->
     <header>
         <div id="Titulo">
             <img src="img/logo_transparente.png" alt="Logo Hub Gaming" style="height: 70px; margin-right: 10px; vertical-align: middle; position: relative; top: -5px;">
@@ -21,10 +22,45 @@
                 <span class="search-icon"><i class="fas fa-search"></i></span>
             </div>
         </div>
+
+        <!-- Área de login com ícone de usuário -->
+        <div id="login-area">
+            <a href="http://127.0.0.1:3000/Login.html" class="login-link">
+                <i class="fas fa-user"></i> <!-- Ícone de usuário -->
+                <p class="texto-login">Entre ou Cadastre-se</p>
+            </a>
+        </div>
     </header>
 
-    <!-- Produto -->
+    <!-- Links das Abas -->
+    <div id="links" class="spaced">
+        <a class="departamento" href="http://127.0.0.1:3000/Monitores.html" target="_blank">DEPARTAMENTO</a>
+        <a href="http://127.0.0.1:3000/Promoções.html" target="_blank">PROMOÇÕES</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">MONITORES</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">NOTEBOOKS</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">HARDWARE</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">PERIFERICOS</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">CUPONS</a>
+        <a href="http://127.0.0.1:3000/Monitores.html" target="_blank">ATENDIMENTO</a>
+    </div>
+
+<!-- Imagem antes do rodapé -->
+<div class="background1img"></div>
+
+
+    <!-- Seção de Produto -->
     <section class="produto">
+        <!-- Nome do Produto (Agora acima da imagem) -->
+        <a href="http://127.0.0.1:3000/Ryzen7.html" class="clickable-title">
+            <p class="texto-conteiner">Processador AMD Ryzen 7 5700X, Sem Vídeo</p>
+        </a>
+
+        <!-- Imagem do Produto -->
+        <a href="http://127.0.0.1:3000/Ryzen7.html">
+            <img src="img/ryzen 5700x.webp" alt="Ryzen7" class="Ryzen7">
+        </a>
+
+        <!-- Avaliação do Produto -->
         <div class="avaliacao">
             <span class="estrela"><i class="fas fa-star"></i></span>
             <span class="estrela"><i class="fas fa-star"></i></span>
@@ -33,21 +69,15 @@
             <span class="estrela"><i class="far fa-star"></i></span>
         </div>
 
-        <a href="http://127.0.0.1:3000/Ryzen7.html">
-            <img src="img/ryzen 5700x.webp" alt="Ryzen7" class="Ryzen7">
-        </a>
-
-        <a href="http://127.0.0.1:3000/Ryzen7.html" class="clickable-title">
-            <p class="texto-conteiner">Processador AMD Ryzen 7 5700X, Sem Vídeo</p>
+        <!-- Preço e Botão de Compra -->
+        <div class="preco-comprar">
             <p class="preco">R$ 1.299,99</p>
-        </a>
+            <a href="#" class="comprar">
+                <button class="btn-comprar">COMPRAR</button>
+            </a>
+        </div>
 
-        <!-- Botão de Compra -->
-        <a href="#" class="comprar">
-            <button class="btn-comprar">COMPRAR</button>
-        </a>
-
-        <!-- Especificações -->
+        <!-- Especificações do Produto -->
         <div class="especificacoes">
             <h2>Especificações:</h2>
             <ul>
@@ -64,6 +94,9 @@
             </ul>
         </div>
     </section>
+
+    <!-- Imagem de Fundo da Página (Agora acima do rodapé) -->
+    <div class="background1img"></div>
 
     <!-- Rodapé -->
     <footer id="rodape">
@@ -83,5 +116,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
