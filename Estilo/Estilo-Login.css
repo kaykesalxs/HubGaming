@@ -17,12 +17,6 @@ body {
     text-decoration: none;
 }
 
-.departamento {
-    border: 10px solid #000000; /* Bordas mais suaves */
-    border-radius: 7px;
-    text-align: center;
-    background-color: #000000; /* Azul Escuro */
-}
 
 #links {
     background-color: #1a1a1a; /* Azul Acinzentado */
@@ -37,12 +31,12 @@ body {
     font-size: 20px;
     text-decoration: none;
     margin: 10px; /* Espaçamento lateral entre os links */
-    
 }
 
 #links a:hover {
     color: #8E44AD; /* Cor ao passar o mouse */
 }
+
 .search-box {
     display: inline-flex; 
     align-items: center; 
@@ -63,6 +57,34 @@ body {
     margin-left: -35px; 
     cursor: pointer; 
 }
+
+/* Estilo para o vídeo em fundo */
+.video-background {
+    position: fixed;           /* Fixa o vídeo no fundo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;               /* Coloca o vídeo atrás do conteúdo */
+    overflow: hidden;
+}
+
+/* Estilo para o conteúdo sobre o vídeo */
+.content {
+    position: relative;
+    z-index: 1;                /* Garante que o conteúdo apareça sobre o vídeo */
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+video {
+    width: 100%;               /* O vídeo vai cobrir toda a tela */
+    height: 100%;              /* Ajusta a altura para cobrir a tela também */
+    object-fit: cover;         /* Faz o vídeo cobrir todo o espaço da tela sem distorcer */
+}
+
+
 /* Estilos da área de login */
 #login-area {
     display: inline-block; /* Mantém a área de login ao lado da barra de pesquisa */
@@ -76,9 +98,10 @@ body {
     display: flex; /* Flexbox para alinhar o ícone e o texto */
     align-items: center; /* Centraliza verticalmente */
 }
+
 .texto-login {
     font-size: 15px;
-    max-width:110px;
+    max-width: 110px;
 }
 
 .login-link i {
@@ -90,70 +113,121 @@ body {
 }
 
 /* Estilo para o fundo do site */
-body { 
-    background-color: #F4F4F4; /* Fundo suave para toda a página */
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden; /* Impede rolagem horizontal */
-}
 .Formulário{
-background-color:#ffffff;
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50%,-50%);
-padding: 150px;
-border-radius: 15px;
-color:rgb(0, 0, 0);
-
+    background-color:#ffffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 15px;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 350px; /* Tamanho do formulário */
+    border: 1px solid #ccc; /* Borda suave */
 }
-Input {
-    padding: 15px;
+
+h1 {
+    text-align: center;
+    color: #8E44AD; /* Cor do título */
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px;
     border-color: #78468d;
     font-size: 16px;
-    border-radius: 7px  ;
-    
+    border-radius: 7px;
+    width: 100%; /* Largura total do input */
+    margin: 10px 0;
+    box-sizing: border-box; /* Garante que o padding não ultrapasse o tamanho */
 }
+
+/* Estilo para o botão Entrar */
 .Entrar {
     background-color: #8E44AD;
     color: #ffffff;
     width: 100%;
     padding-top: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     text-align: center;
     border-radius: 7px;
+    cursor: pointer; /* Adiciona o cursor de pointer */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.Entrar:hover{
+
+.Entrar i {
+    margin-right: 10px; /* Ícone no botão */
+}
+
+.Entrar:hover {
     background-color: #78468d;
     color: #ffffff;
 }
 
-.esqueceu {
-    background-color:transparent;
-    border:none;
+/* Estilo para o botão Cadastrar-se (um abaixo do outro) */
+.Cadastrar {
+    background-color: transparent;
+    border: none;
+    color: #8E44AD; /* Cor do botão Cadastrar-se */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Faz o botão ficar em um bloco, ou seja, um abaixo do outro */
+    margin-top: 10px; /* Espaço entre os botões */
+    padding: 12px;
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%; /* Faz o botão ocupar toda a largura */
 }
 
+.Cadastrar:hover {
+    color: #78468d; /* Cor ao passar o mouse */
+}
 
+/* Estilo para o link "Esqueceu a senha?" */
+.esqueceu {
+    background-color: transparent;
+    border: none;
+    color: #8E44AD; /* Cor do link "Esqueceu a senha?" */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Garante que fique abaixo do botão Entrar */
+    text-align: center; /* Centraliza o texto */
+    margin-top: -20px; /* Espaçamento entre os botões */
+    margin-left: 110px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Formulário {
+        padding: 20px; /* Menos padding em telas menores */
+        width: 80%; /* Ajuste na largura */
+    }
+
+    .Entrar {
+        padding: 12px; /* Maior área clicável em dispositivos móveis */
+    }
+
+    .Cadastrar {
+        padding: 12px; /* Maior área clicável em dispositivos móveis */
+    }
+
+    .esqueceu {
+        font-size: 16px; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+/* Rodapé */
 #rodape {
     background-color: #1a1a1a; /* Fundo escuro */
     color: #ffffff; /* Texto branco */
-    padding: 20px 0; /* Espaçamento superior e inferior */
-    text-align:center; /* Centraliza o texto */
-    
-   
-    
-}
-
-#rodape .container {
-    max-width: 1200px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza o contêiner */
-
-
-    
-}
-
-#rodape h2 {
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    
+    padding: 40px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o texto */
 }
 
 #rodape .links {
@@ -163,7 +237,8 @@ Input {
 #rodape .links a {
     color: #ffffff; /* Cor dos links */
     text-decoration: none; /* Remove o sublinhado */
-    margin: 0 10px; /* Espaçamento lateral entre os links */
+    margin: 0 15px; /* Espaçamento lateral entre os links */
+    font-size: 16px;
 }
 
 #rodape .links a:hover {
@@ -176,8 +251,8 @@ Input {
 
 .social-media a {
     color: #ffffff; /* Cor dos ícones */
-    margin: 0 10px; /* Espaçamento lateral entre os ícones */
-    font-size: 20px; /* Tamanho dos ícones */
+    margin: 0 15px; /* Espaçamento lateral entre os ícones */
+    font-size: 22px; /* Tamanho maior para os ícones */
 }
 
 .social-media a:hover {
@@ -185,6 +260,252 @@ Input {
 }
 
 .copyright {
-    margin-top: 15px; /* Espaçamento acima do texto de copyright */
-    font-size: 14px; /* Tamanho do texto */
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7; /* Um toque de transparência para o texto de copyright */
+}
+body { 
+    background-color: #F4F4F4; /* Fundo suave para toda a página */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+#Titulo {
+    background-color: #1a1a1a; /* Azul Escuro */
+    width: 100%; 
+    text-align: center; 
+    padding: 5px; /* Ajuste para melhor espaçamento */
+}
+
+#Titulo a {
+    color: #e7e7e7; /* Cor do título */
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.departamento {
+    border: 10px solid #000000; /* Bordas mais suaves */
+    border-radius: 7px;
+    text-align: center;
+    background-color: #000000; /* Azul Escuro */
+}
+
+#links {
+    background-color: #1a1a1a; /* Azul Acinzentado */
+    width: 100%;
+    padding: 20px; /* Ajustar o padding superior */
+    text-align: center; 
+    word-spacing: 30px; 
+}
+
+#links a {
+    color: #ffffff; /* Cor dos links no cabeçalho */
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px; /* Espaçamento lateral entre os links */
+}
+
+#links a:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+.search-box {
+    display: inline-flex; 
+    align-items: center; 
+    margin-left: 20px; 
+}
+
+.search-box input {
+    width: 1000px; /* Tamanho para melhor proporção */
+    padding: 15px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.search-icon {
+    font-size: 17px; 
+    color: rgb(0, 0, 0); 
+    margin-left: -35px; 
+    cursor: pointer; 
+}
+
+/* Estilos da área de login */
+#login-area {
+    display: inline-block; /* Mantém a área de login ao lado da barra de pesquisa */
+    margin-left: 20px; /* Espaçamento à esquerda */
+}
+
+.login-link {
+    color: #e7e7e7; /* Cor do link de login */
+    font-size: 14px; /* Ajuste o tamanho da fonte aqui */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.texto-login {
+    font-size: 15px;
+    max-width: 110px;
+}
+
+.login-link i {
+    margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+.login-link:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o fundo do site */
+.Formulário{
+    background-color:#ffffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 15px;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 350px; /* Tamanho do formulário */
+    border: 1px solid #ccc; /* Borda suave */
+}
+
+h1 {
+    text-align: center;
+    color: #8E44AD; /* Cor do título */
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px;
+    border-color: #78468d;
+    font-size: 16px;
+    border-radius: 7px;
+    width: 100%; /* Largura total do input */
+    margin: 10px 0;
+    box-sizing: border-box; /* Garante que o padding não ultrapasse o tamanho */
+}
+
+/* Estilo para o botão Entrar */
+.Entrar {
+    background-color: #8E44AD;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer; /* Adiciona o cursor de pointer */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Entrar i {
+    margin-right: 10px; /* Ícone no botão */
+}
+
+.Entrar:hover {
+    background-color: #78468d;
+    color: #ffffff;
+}
+
+/* Estilo para o botão Cadastrar-se (um abaixo do outro) */
+.Cadastrar {
+    background-color: transparent;
+    border: none;
+    color: #8E44AD; /* Cor do botão Cadastrar-se */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Faz o botão ficar em um bloco, ou seja, um abaixo do outro */
+    margin-top: 10px; /* Espaço entre os botões */
+    padding: 12px;
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%; /* Faz o botão ocupar toda a largura */
+}
+
+.Cadastrar:hover {
+    color: #78468d; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o link "Esqueceu a senha?" */
+.esqueceu {
+    background-color: transparent;
+    border: none;
+    color: #8E44AD; /* Cor do link "Esqueceu a senha?" */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+    font-size: 14px;
+    display: block; /* Garante que fique abaixo do botão Entrar */
+    text-align: center; /* Centraliza o texto */
+    margin-top: -20px; /* Espaçamento entre os botões */
+    margin-left: 110px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Formulário {
+        padding: 20px; /* Menos padding em telas menores */
+        width: 80%; /* Ajuste na largura */
+    }
+
+    .Entrar {
+        padding: 12px; /* Maior área clicável em dispositivos móveis */
+    }
+
+    .Cadastrar {
+        padding: 12px; /* Maior área clicável em dispositivos móveis */
+    }
+
+    .esqueceu {
+        font-size: 16px; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 40px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+#rodape .links {
+    margin: 15px 0; /* Margem acima e abaixo dos links */
+}
+
+#rodape .links a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 15px; /* Espaçamento lateral entre os links */
+    font-size: 16px;
+}
+
+#rodape .links a:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+.social-media {
+    margin: 15px 0; /* Margem acima e abaixo dos ícones de redes sociais */
+}
+
+.social-media a {
+    color: #ffffff; /* Cor dos ícones */
+    margin: 0 15px; /* Espaçamento lateral entre os ícones */
+    font-size: 22px; /* Tamanho maior para os ícones */
+}
+
+.social-media a:hover {
+    color: #8E44AD; /* Cor ao passar o mouse */
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7; /* Um toque de transparência para o texto de copyright */
 }

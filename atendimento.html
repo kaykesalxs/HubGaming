@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atendimento ao cliente - Hub Gaming">
+    <meta name="keywords" content="Atendimento, Suporte, Contato, Hub Gaming">
+    <meta name="author" content="Kayke Sales">
+    <title>Atendimento - Hub Gaming</title>
+    <link rel="stylesheet" href="Estilo/Estilo-atendimento.css"> <!-- Link para o CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegação com Logo -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <!-- Logo - Ao clicar nela, você será redirecionado para a home -->
+                <a href="hubgamimg.html">
+                    <img src="img/logo_transparente.png" alt="Logo Hub Gaming" style="height: 100px; vertical-align: middle;">
+                </a>
+            </div>
+<div>
+    
+</div>            
+            <div class="navbar-links">
+                
+                <a href="hubgamimg.html">Início</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="atendimento">
+        <h1>Atendimento ao Cliente</h1>
+        <p>Olá, como você está? Nosso time está pronto para ajudar! Escolha uma das opções abaixo para entrar em contato conosco.</p>
+
+        <!-- Opções de contato -->
+        <div class="opcoes-contato">
+            <div class="opcao">
+                <a href="https://wa.me/+5581988869570" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+            <div class="opcao">
+                <a href="mailto:atendimento@hubgaming.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-mail</span>
+                </a>
+            </div>
+            <div class="opcao">
+                <a href="tel:+5511999999999">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Telefone</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulário de Contato -->
+        <h2>Ou nos envie uma mensagem:</h2>
+        <form id="form-contato" action="enviar-formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva sua dúvida ou solicitação. (Seu feedback é de grande importância para nossa melhoria)"></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <!-- Horário de Atendimento -->
+        <div class="horario-atendimento">
+            <p><strong>Horário de Atendimento:</strong></p>
+            <p>De segunda a sexta-feira, das 9h às 18h.</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Icones FontAwesome -->
+</body>
+</html>

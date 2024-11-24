@@ -1,16 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Meu projeto Hub!">
-    <Meta name="keywords" content="Projeto, Desenvolvimento, Programação">
-    <Meta name="Author" Content=" Kayke Sales">
-    <title> Hub Gaming!</title>
-    <link rel="stylesheet" href="Estilo/Estilo-Pag1.css"
-</head> <h1> Hub Gaming</h1>
-<p1> Promoções </p1>
+    <meta name="keywords" content="Projeto, Desenvolvimento, Programação">
+    <meta name="author" content="Kayke Sales">
+    <title>Hub Gaming!</title>
+    <link rel="stylesheet" href="Estilo/Estilo-promoções.css"> <!--mudar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
+    <div id="Titulo">
+        <img src="img/logo_transparente.png" alt="Logo Hub Gaming" style="height: 70px; margin-right: 10px; vertical-align: middle; position: relative; top: -5px;">
+        <a href="http://127.0.0.1:3000/hubgamimg.html" class="clickable-title">Hub Gaming </a>
+        <div class="search-box">
+            <input type="text" name="search" placeholder="Pesquise o seu produto">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
     
-</body>
-</html>
+              <!-- Área de login com ícone de usuário e carrinho de compras -->
+<div id="login-area">
+    <a href="http://127.0.0.1:3000/Login.html" class="login-link">
+        <i class="fas fa-user"></i> <!-- Ícone de usuário -->
+        <p class="texto-login">Entre ou Cadastre-se</p>
+        <!-- Ícone estilizado do carrinho de compras -->
+        <i class="fas fa-shopping-cart carrinho"></i>
+    </a>
+</div>
+    </div>
+    
+    <!-- Links das Abas -->
+    <div id="links" class="spaced">
+<a href="http://127.0.0.1:3000/Promoções.html">PROMOÇÕES</a>
+<a href="http://127.0.0.1:3000/Monitores.html">MONITORES</a>
+<a href="http://127.0.0.1:3000/Monitores.html">NOTEBOOKS</a>
+<a href="http://127.0.0.1:3000/Monitores.html">HARDWARE</a>
+<a href="http://127.0.0.1:3000/Monitores.html">PERIFERICOS</a>
+<a href="http://127.0.0.1:3000/atendimento.html">ATENDIMENTO</a>
+
+    </div>
+    <div class="background1img"></div>
+  
+    
+    <!-- Container para os produtos -->
+    <div class="container"> 
+        <div class="produto"> 
+            <div class="avaliacao">
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star-half-alt"></i></span>
+            </div>
+            <a href="http://127.0.0.1:3000/RTX3060.html">
+                <img src="img/Placa de Vídeo.webp" class="Placa-de-Vídeo" alt="Placa de Vídeo">
+            </a>
+            <a href="http://127.0.0.1:3000/RTX3060.html" class="clickable-title">
+                <p class="texto-conteiner">Placa de Vídeo RTX 3060 1-Click OC Galax NVIDIA GeForce, 12GB GDDR6, LHR, DLSS, Ray Tracing </p>
+                <p class="preco">R$ 1639,99</p> <!-- Mover o preço aqui -->
+                <p class="Definição-valor">À vista no PIX</p>
+                <p class="Definição-valor">ou em <strong>12x de R$ 1639,99</strong></p>
+            </a>
+        </div>
+    
+        <!-- Container para o Notebook -->
+        <div class="produto"> 
+            <div class="avaliacao">
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star-half-alt"></i></span>
+                <span class="estrela"><i class="far fa-star"></i></span>
+            </div>
+            <a href="http://127.0.0.1:3000/Notebook-acer.html">
+                <img src="img/Notebook Acer.webp" alt="Notebook Acer" class="Notebook-acer">
+            </a>
+            <a href="http://127.0.0.1:3000/Notebook-acer.html" class="clickable-title">
+                <p class="texto-conteiner">Notebook Gamer Acer Nitro V15, Intel Core i5-13420H de 13ª Geração, RTX 3050 GDDR6, SSD 512GB, Tela De 15.6.</p>
+                <p class="preco">R$ 6.299,10</p> <!-- Mover o preço aqui -->
+                <p class="Definição-valor">À vista no PIX</p>
+                <p class="Definição-valor">ou em <strong>12x de R$ 583,25</strong></p>
+            </a>
+        </div>
+    
+        <!-- Container para o R7 -->
+        <div class="produto"> 
+            <div class="avaliacao">
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star-half-alt"></i></span>
+                <span class="estrela"><i class="far fa-star"></i></span>
+            </div>
+            <a href="http://127.0.0.1:3000/Ryzen7.html">
+                <img src="img/ryzen 5700x.webp" alt="Ryzen7" class="Ryzen7">
+            </a>
+            <a href="http://127.0.0.1:3000/Ryzen7.html" class="clickable-title">
+                <p class="texto-conteiner">Processador AMD Ryzen 7 5700X, 3.4GHz (4.6GHz Max Turbo), Cache 36MB, AM4, Sem Vídeo</p>
+                <p class="preco">R$ 1.299,99</p> <!-- Mover o preço aqui -->
+                <p class="Definição-valor">À vista no PIX</p>
+                <p class="Definição-valor">ou em <strong>12x de R$ 141,17</strong></p>
+            </a>
+        </div>
+        
+        <!-- Container para a 4060 -->
+        <div class="produto"> 
+            <div class="avaliacao">
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="far fa-star"></i></span>
+            </div>
+            <a href="http://127.0.0.1:3000/RTX4060.HTML">
+                <img src="img/RTX 4060 VENTUS.webp" alt="RTX 4060 VENTUS" class="RTX">
+            </a>
+            <a href="http://127.0.0.1:3000/RTX4060.HTML" class="clickable-title">
+                <p class="texto-conteiner">Placa de Vídeo RTX 4060 VENTUS 2x Black OC MSI NVIDIA GeForce, 8GB GDDR6, DLSS, Ray Tracing</p>
+                <p class="preco">R$ 1.969,99</p> <!-- Mover o preço aqui -->
+                <p class="Definição-valor">À vista no PIX</p>
+                <p class="Definição-valor">ou em <strong>12x de R$ 190,89</strong></p>
+            </a>
+        </div>
+        
+        <!-- Container para o MouseX -->
+        <div class="produto"> 
+            <div class="avaliacao">
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star"></i></span>
+                <span class="estrela"><i class="fas fa-star-half-alt"></i></span>
+                <span class="estrela"><i class="far fa-star"></i></span>
+            </div>
+            <a href="http://127.0.0.1:3000/MouseHyperX.html">
+                <img src="img/MouseHyperX.webp" alt="MouseHyperX" class="MouseHyperX">
+            </a>
+            <a href="http://127.0.0.1:3000/MouseHyperX.html" class="clickable-title">
+                <p class="texto-conteiner">Mouse Gamer HyperX Pulsefire Core RGB 6200 DPI </p>
+                <p class="preco">R$ 144,53</p> <!-- Mover o preço aqui -->
+                <p class="Definição-valor">À vista no PIX</p>
+                <p class="Definição-valor">ou em <strong>7x de R$ 25,20</strong></p>
+            </a>
+        </div>
+        
+    </div>
+    <footer id="rodape">
+        <div class="container">
+    
+            <div class="links">
+                <a href="#home">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#contato">Contato</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">© 2024 Hub Gaming. Todos os direitos reservados.</p>
+        </div>
+    </footer>
