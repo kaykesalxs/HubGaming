@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box ;
 }
 
 body {
@@ -61,6 +61,31 @@ body {
     margin-left: -35px;
     cursor: pointer;
 }
+/* Define o tamanho da div que exibirá as imagens */
+.background1img {
+    width: 100%;            /* Largura da div */
+    height: 300px;          /* Altura da div */
+    background-position: center;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    animation: trocaImagens 15s infinite; /* Define a animação para a troca das imagens */
+}
+
+/* Animação que troca as imagens de fundo */
+@keyframes trocaImagens {
+    0% {
+        background-image: url("../img/tera.jpg"); /* Caminho da 1ª imagem */
+    }
+    33% {
+        background-image: url("../img/tera_2.jpg"); /* Caminho da 2ª imagem */
+    }
+    66% {
+        background-image: url("../img/tera_3.jpg"); /* Caminho da 3ª imagem */
+    }
+    100% {
+        background-image: url("../img/tera_4.jpg"); /* Retorna para a 1ª imagem */
+    }
+}
+
 
 /* Estrela de avaliação */
 .estrela {
@@ -78,7 +103,7 @@ body {
 
 /* Produto */
 .produto {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     margin: 30px auto;
     border-radius: 8px;
@@ -415,43 +440,7 @@ body {
     width: 90%;
 }
 
-/* Estrela de avaliação */
-.estrela {
-    color: rgb(192, 137, 18);
-    margin-left: 2px;
-}
-
-/* Estrutura do preço e botão de compra */
-.produto .preco-comprar {
-    display: flex;
-    flex-direction: column; /* Preço em cima, botão embaixo */
-    align-items: flex-start; /* Alinhar à esquerda */
-    gap: 10px;             /* Espaçamento entre o preço e o botão */
-    margin-top: 20px;
-}
-
-/* Preço */
-.produto .preco {
-    font-size: 22px;
-    color: #E74C3C;
-    font-weight: bold;
-    margin-left: 0;        /* Garantir que o preço fique à esquerda */
-}
-
-/* Botão de compra */
-.produto .btn-comprar {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.produto .btn-comprar:hover {
-    background-color: #2980b9;
+/
 }
 
 /* Especificações do produto */
