@@ -44,15 +44,32 @@ body {
     color: #8E44AD; /* Cor ao passar o mouse */
 }
 
+/* Define o tamanho da div que exibirá as imagens */
 .background1img {
-    height: 230px;
-    background-color: grey;
-    background-image: url("../img/tera.jpg");
+    width: 100%;            /* Largura da div */
+    height: 300px;          /* Altura da div */
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:110%;
+    background-size: cover; /* Faz a imagem cobrir toda a área da div */
+    animation: trocaImagens 15s infinite; /* Define a animação para a troca das imagens */
 }
+
+/* Animação que troca as imagens de fundo */
+@keyframes trocaImagens {
+    0% {
+        background-image: url("../img/tera.jpg"); /* Caminho da 1ª imagem */
+    }
+    33% {
+        background-image: url("../img/tera_2.jpg"); /* Caminho da 2ª imagem */
+    }
+    66% {
+        background-image: url("../img/tera_3.jpg"); /* Caminho da 3ª imagem */
+    }
+    100% {
+        background-image: url("../img/tera_4.jpg"); /* Retorna para a 1ª imagem */
+    }
+}
+
+
 
 .search-box {
     display: inline-flex; 
@@ -75,14 +92,6 @@ body {
     cursor: pointer; 
 }
 
-.Spoiler-Black {
-    background-color: red;
-    color: #ffffff;
-    border-radius: 7px;
-    padding: 20px;
-    max-width: 1500px;
-    margin-left: 170px;
-}
 
 
 /* Estilos da área de login */
