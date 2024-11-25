@@ -1,0 +1,2 @@
+caminho/do/arquivo filter=lfs diff=lfs merge=lfs -text
+img/fundo_hub.mp4 filter=lfs diff=lfs merge=lfs -text
